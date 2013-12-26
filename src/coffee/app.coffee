@@ -8,7 +8,7 @@ modules = [
 
 @app = angular.module('stormpath', modules)
 @app.factory("$config", ->
-    BASE_API: '' # http://api.bar.com/
+    API_BASE: '' # http://api.bar.com/
     USER_RESOURCE: 'users.json'
 )
 @app.config([configFn])

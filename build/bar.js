@@ -9,7 +9,7 @@
 
   this.app.factory("$config", function() {
     return {
-      BASE_API: '',
+      API_BASE: '',
       USER_RESOURCE: 'users.json'
     };
   });
