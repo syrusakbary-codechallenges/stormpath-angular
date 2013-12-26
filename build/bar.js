@@ -9,7 +9,7 @@
 
   this.app.factory("$config", function() {
     return {
-      BASE_API: '',
+      API_BASE: '',
       USER_RESOURCE: 'users.json'
     };
   });
@@ -50,7 +50,7 @@
     var service;
     service = {};
     service.register = function(user) {
-      return $http.post("" + $config.API_BASE + $config.USER_RESOURCE, user);
+      return $http.get("" + $config.API_BASE + $config.USER_RESOURCE, user);
     };
     return service;
   };
