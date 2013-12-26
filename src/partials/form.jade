@@ -1,0 +1,8 @@
+div(ng-controller="FormCtrl")
+    form#placeholder__form(ng-click="toggle_highlight()", ng-submit="submit(user)", ng-hide="sended")
+      label.placeholder__label(for="placeholder__email") E-mail:
+      input#placeholder__email(name='email', type='email', required, ng-model='user.email')
+      input#placeholder__send(type='submit', value='Send')
+    #placeholder__sended(ng-show="sended")
+        p Sended :)
+        a#placeholder__send-again(ng-click="reset()") Send other!
